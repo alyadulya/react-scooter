@@ -1,0 +1,34 @@
+.room-amenities {
+    margin-top: rem(40);
+}
+  
+.room-amenities__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: rem(30);
+    border-top: 1px solid $gray-light;
+}
+  
+.room-amenities__item {
+    display: flex;
+    align-items: center;
+  
+    &:not(:nth-of-type(n+9)) {
+        margin-bottom: rem(25);
+    }
+  
+    &.non-available {
+        opacity: 0.25;
+    }
+}
+  
+.room-amenities__icon {
+    width: 24px;
+    height: 24px;
+}
+  
+.room-amenities__title {
+    @extend %light--16;
+  
+    margin-left: rem(10);
+}  
